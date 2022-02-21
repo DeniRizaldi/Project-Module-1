@@ -35,8 +35,9 @@ def Main_Menu () :
         if MainMenu == '5':
             print ('\nTerima kasih dan sampai jumpa!!!')
             break #untuk menghentikan pengkondisian
-        #else :
-        #    print ("\n======= Pilihan yang anda masukkan salah =======\n")
+        else :
+            print ("\n======= Pilihan yang anda masukkan salah =======\n")
+            
               
 def Report_Menu () :
     ReportMenu = True
@@ -71,7 +72,7 @@ def Report_Menu () :
             else :
                 print ('\n******* Tidak ada Spare Part *******')
         elif ReportMenu == '3':
-            Main_Menu()
+            break
         else :
             print ('\n******* Pilihan Menu tidak ada *******')
 
@@ -113,13 +114,14 @@ def Create_Menu () :
                         print('\n--- Spare Part tidak ditambahkan ---')
                     else:
                         break                
-            continue    
+                continue    
 
         elif CreateMenu == '2':
-            Main_Menu()
             break        
+        
         else :
             print ('\n******* Pilihan Menu tidak ada *******')
+            break
 
 def Update_Menu () :
     UpdateMenu = True
@@ -182,13 +184,11 @@ def Update_Menu () :
                                 print('\nData berhasil diubah')
                             elif confLoc == 'n' :
                                 print('\nData tidak diubah')   
+                        continue
 
-                        else :
-                            break  
-
-                    else :
-                        print ('Data tidak ada!!!')        
-                        break                     
+                else :
+                    print ('Data tidak ada!!!')   
+                    break                   
                         
 
 def Delete_Menu () :
@@ -222,21 +222,8 @@ def Delete_Menu () :
             else :
                 print ('\nSpare Part sudah tidak ada stok')
         elif DeleteMenu == '2':
-            Main_Menu()
             break        
         else :
             print ('\n******* Pilihan Menu tidak ada *******')
 
 Main_Menu()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
