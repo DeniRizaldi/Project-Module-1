@@ -35,8 +35,8 @@ def Main_Menu () :
         elif MainMenu == '5':
             print ('\nTerima kasih dan sampai jumpa!!!')
             break #untuk menghentikan pengkondisian
-        else :
-            print ("\n======= Pilihan yang anda masukkan salah =======\n")
+        #else :
+        #    print ("\n======= Pilihan yang anda masukkan salah =======\n")
             
               
 def Report_Menu () :
@@ -114,14 +114,13 @@ def Create_Menu () :
                         print('\n--- Spare Part tidak ditambahkan ---')
                     else:
                         break                
-                continue    
+                    
 
         elif CreateMenu == '2':
             break        
         
         else :
             print ('\n******* Pilihan Menu tidak ada *******')
-            break
 
 def Update_Menu () :
     UpdateMenu = True
@@ -146,15 +145,17 @@ def Update_Menu () :
                             if confKode == 'y' :
                                 stok[i]['Kode'] = ubahKode
                                 print('\nData berhasil diubah')
+                                break
                             elif confKode == 'n' :
                                 print('\nData tidak diubah')    
-                        
+
                         if nameupdt == 'nama' :
                             ubahNama = input('\nUpdate Nama : ').upper()
                             confNama = input('\nApakah Data akan diubah? [Y/N] : ').lower()
                             if confNama == 'y' :
                                 stok[i]['Nama'] = ubahNama
                                 print('\nData berhasil diubah')
+                                break
                             elif confNama == 'n' :
                                 print('\nData tidak diubah')
 
@@ -164,6 +165,7 @@ def Update_Menu () :
                             if confSpek == 'y' :
                                 stok[i]['Spesifikasi'] = ubahSpek
                                 print('\nData berhasil diubah')
+                                break
                             elif confSpek == 'n' :
                                 print('\nData tidak diubah')  
 
@@ -173,6 +175,7 @@ def Update_Menu () :
                             if confQty == 'y' :
                                 stok[i]['Quantity'] = ubahQty
                                 print('\nData berhasil diubah')
+                                break
                             elif confQty == 'n' :
                                 print('\nData tidak diubah') 
 
@@ -182,13 +185,15 @@ def Update_Menu () :
                             if confLoc == 'y' :
                                 stok[i]['Lokasi'] = ubahLoc
                                 print('\nData berhasil diubah')
+                                break
                             elif confLoc == 'n' :
-                                print('\nData tidak diubah')   
-                        continue
+                                print('\nData tidak diubah')
 
+                    else :
+                        print ('Data tidak ada!!!')   
+                        break      
                 else :
-                    print ('Data tidak ada!!!')   
-                    break                   
+                    print ('\n******* Pilihan Menu tidak ada *******')             
                         
 
 def Delete_Menu () :
@@ -216,9 +221,9 @@ def Delete_Menu () :
                         else :
                             print('\nMenu yang anda masukkan salah')
                             break
-                    else :
-                        print ('\nSpare Part tidak ditemukan')
-                        break
+                else :
+                    print ('\nSpare Part tidak ditemukan')
+                    break
             else :
                 print ('\nSpare Part sudah tidak ada stok')
         elif DeleteMenu == '2':
