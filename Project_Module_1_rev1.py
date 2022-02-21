@@ -26,13 +26,13 @@ def Main_Menu () :
         MainMenu = input('Silakan pilih Main_Menu [1-5] : ')
         if MainMenu == '1' :
             Report_Menu()
-        if MainMenu == '2' :
+        elif MainMenu == '2' :
             Create_Menu()
-        if MainMenu == '3' :
+        elif MainMenu == '3' :
             Update_Menu()
-        if MainMenu == '4' :
+        elif MainMenu == '4' :
             Delete_Menu()    
-        if MainMenu == '5':
+        elif MainMenu == '5':
             print ('\nTerima kasih dan sampai jumpa!!!')
             break #untuk menghentikan pengkondisian
         else :
