@@ -113,7 +113,7 @@ def Create_Menu () :
                     elif checkerCreate == 'N':
                         print('\n--- Spare Part tidak ditambahkan ---')
                     else:
-                        break                
+                        continue                
                     
 
         elif CreateMenu == '2':
