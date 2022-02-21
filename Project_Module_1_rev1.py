@@ -227,29 +227,6 @@ def Delete_Menu () :
         else :
             print ('\n******* Pilihan Menu tidak ada *******')
 
-# def Delete():
-#     while True:
-#         delCode = input('\n        Masukkan kode item barang yang ingin dihapus : ').lower()
-#         for i in range(len(ListBarang)):
-#             if delCode == ListBarang[i]['Kode item']:
-#                 print('\n        Item yang ingin dihapus adalah : ', ListBarang[i])
-#                 confDel = input('\n        Apakah yakin ingin menghapus data ini? (Y/N) : ').lower()
-#                 if confDel == 'y':
-#                     del ListBarang[i]
-#                     print('\n        "Data berhasil dihapus"') 
-#                     break
-#                 elif confDel == 'n':
-#                     print('\n        "Data tidak terhapus"')
-#                     break
-#                 else:
-#                     print('\n        "Perintah yang anda masukkan salah"')
-#                     break
-
-#         else:
-#             print('\n        "Data tidak ditemukan"')
-#         break
-
-
 Main_Menu()
     
     
