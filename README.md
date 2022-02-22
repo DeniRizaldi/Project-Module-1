@@ -1,4 +1,4 @@
-# Project-Module-1
+# Purwadhika Project Module 1 - Stok Spare Part Programming
 Data Science of Purwadhika School, Project Module 1
 
 Deni Rizky Rizaldi
