@@ -35,8 +35,7 @@ def Main_Menu () :
         elif MainMenu == '5':
             print ('\nTerima kasih dan sampai jumpa!!!')
             break #untuk menghentikan pengkondisian
-        #else :
-        #    print ("\n======= Pilihan yang anda masukkan salah =======\n")
+
             
               
 def Report_Menu () :
@@ -187,11 +186,7 @@ def Update_Menu () :
                                 print('\nData berhasil diubah')
                                 break
                             elif confLoc == 'n' :
-                                print('\nData tidak diubah')
-
-                    else :
-                        print ('Data tidak ada!!!')   
-                        break      
+                                print('\nData tidak diubah')   
                 else :
                     print ('\n******* Pilihan Menu tidak ada *******')             
                         
